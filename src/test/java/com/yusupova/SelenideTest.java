@@ -23,8 +23,5 @@ public class SelenideTest extends TestBase {
         $("#repository-container-header").shouldBe(visible, Duration.ofSeconds(30));
         $(partialLinkText("Issues")).click();
         $(("#issue_2")).$("a").shouldHave(Condition.text("Need to change from 'JUnit' to 'Selenide'"));
-
-
-
     }
 }
